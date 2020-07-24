@@ -1,0 +1,10 @@
+{% extends 'user/base.html' %}
+{% block content %}
+	<table>
+	<tr> <td> Name :</td> <td> {{ user.name}} </td> </tr>
+   	<tr> <td> Bio : </td> <td> {{ user.bio }} </td> </tr>
+    <tr> <td> Email : </td> <td> {{ user.email }} </td> </tr>
+    <tr> <td> Profile Picture: </td> <td> <img src="{{ user.profile_image.url }}"  width="200" height="300">  </td> </tr>
+	</table>
+
+{% endblock %}
